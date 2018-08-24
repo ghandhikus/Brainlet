@@ -1,0 +1,1 @@
+Free for non-commercial use. All rights reserved. Daniel Debert 2018. Please contact the owner for the license.
