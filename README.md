@@ -1,7 +1,7 @@
 # Brainlet
 Blackbox based AI for games. Provides multiple solutions for entity mood, goal picking and identity.
 
-![Brainlet AI library logo](https://i.imgur.com/szd80IM.png)
+<img src="https://i.imgur.com/szd80IM.png" width="15%" height="15%">
 
 ## Brainlet Usage
 ```java
