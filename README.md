@@ -1,5 +1,7 @@
-<img src="https://i.imgur.com/szd80IM.png" width="15%" height="15%" align="right"/>
 # Brainlet
+
+<img src="https://i.imgur.com/szd80IM.png" width="15%" height="15%" align="right"/>
+
 Blackbox based AI for games. Provides multiple solutions for entity mood, goal picking and identity.
 
 
