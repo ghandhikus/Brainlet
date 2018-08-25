@@ -4,7 +4,7 @@
 
 Blackbox based AI for games. Provides multiple solutions for entity mood, goal picking and identity.
 
-## Binaries
+## Download
 
 
 ### Gradle
