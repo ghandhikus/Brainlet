@@ -4,7 +4,10 @@
 
 Blackbox based AI for games. Provides multiple solutions for entity mood, goal picking and identity.
 
-## Gradle
+## Binaries
+
+
+### Gradle
 ```gradle
 repositories {
     // ...
@@ -14,6 +17,20 @@ repositories {
 dependencies {
     compile 'com.github.ghandhikus:Brainlet:master'
 }
+```
+
+### Maven
+```xml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
+
+<dependency>
+    <groupId>com.github.ghandhikus</groupId>
+    <artifactId>Brainlet</artifactId>
+    <version>master</version>
+</dependency>
 ```
 
 ## Brainlet Usage
