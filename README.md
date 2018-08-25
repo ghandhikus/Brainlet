@@ -58,7 +58,7 @@ import com.brainlet.identity.MBTIIdentity;
 import com.brainlet.memories.RAMMemories;
 /** import com.library.ai.SqliteMemories; */ // < provided by you
 import com.brainlet.plutchik.PlutchikWheel;
-import server.main.entity.Entity;
+/** import com.library.entity.Entity; */ // < provided by you
 
 public class EntityBrainlet extends Brainlet implements BlackBox {
 
