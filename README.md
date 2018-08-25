@@ -23,4 +23,30 @@ Blackbox based AI for games. Provides multiple solutions for entity mood, goal p
     // - For long-term memory you should use database that won't use RAM to avoid hauling megabytes of data.
     // 
     // 
+    
+import com.brainlet.BlackBox;
+import com.brainlet.Brainlet;
+import com.brainlet.identity.MBTIIdentity;
+import com.brainlet.memories.RAMMemories;
+import com.brainlet.plutchik.PlutchikWheel;
+import server.main.entity.Entity;
+
+public class EntityBrainlet extends Brainlet implements BlackBox {
+
+    private final Entity entity;
+
+    public EntityBrainlet(Entity entity) {
+        this.entity = entity;
+
+        this.longMemory = new SqliteMemories();
+        this.shortMemory = new RAMMemories();
+        this.senses = new EntitySenses(entity);
+        this.identity = new MBTIIdentity();
+        this.mood = new PlutchikWheel();
+        this.blackBox = this;
+    }
+
+    public Entity getEntity() { return entity; }
+}
+
 ```
