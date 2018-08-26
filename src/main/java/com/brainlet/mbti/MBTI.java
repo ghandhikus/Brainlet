@@ -45,10 +45,10 @@ public enum MBTI {
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Main Function Preferences
-    public String identity;
-    public String gathering;
-    public String organising;
-    public String tribe;
+    public char identity;
+    public char gathering;
+    public char organising;
+    public char tribe;
 
     // Efficiency is specified by [0,1,2,3], 0 being the strongest and 3 the weakest
     public int identityEfficiency;
@@ -112,26 +112,26 @@ public enum MBTI {
             return;
 
         // Identity
-        if((func.equals("Ti") || func.equals("Fi")) && identity == null) {
-            identity = func;
+        if((func.equals("Ti") || func.equals("Fi")) && identity == 0) {
+            identity = func.charAt(0);
             identityEfficiency = i;
         }
 
         // Gathering
-        if((func.equals("Ne") || func.equals("Se")) && gathering == null) {
-            gathering = func;
+        if((func.equals("Ne") || func.equals("Se")) && gathering == 0) {
+            gathering = func.charAt(0);
             gatheringEfficiency = i;
         }
 
         // Organising
-        if((func.equals("Ni") || func.equals("Si")) && organising == null) {
-            organising = func;
+        if((func.equals("Ni") || func.equals("Si")) && organising == 0) {
+            organising = func.charAt(0);
             organisingEfficiency = i;
         }
 
         // Tribe
-        if((func.equals("Te") || func.equals("Fe")) && tribe == null) {
-            tribe = func;
+        if((func.equals("Te") || func.equals("Fe")) && tribe == 0) {
+            tribe = func.charAt(0);
             tribeEfficiency = i;
         }
     }

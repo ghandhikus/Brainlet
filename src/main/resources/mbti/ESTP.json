@@ -1,0 +1,6 @@
+{
+  "func": ["Se","Ti","Fe","Ni","Si","Te","Fi","Ne"],
+  "giftedToNormalRatio": 0.25,
+  "maleToFemaleRatio": 0.65,
+  "DnDAlignment": ["TN", "CN", "CG", "NE"]
+}

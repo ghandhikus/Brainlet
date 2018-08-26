@@ -9,24 +9,32 @@ import com.brainlet.plutchik.PlutchikWheel;
  *
  * Core class of Brainlet library.
  */
-public class Brainlet {
+public abstract class Brainlet {
 
     //////////////////////////////
+    // To use brainlet you need to override Brainlet class
+    //
     // Brainlet core parts:
     //
-    // Long-term memory
-    // Short-term memory
-    // Sensorics
-    // Identity
-    // Mood
-    // Decision-making blackbox
+    // - Long-term memory
+    // - Short-term memory
+    // - Sensorics
+    // - Identity
+    // - Mood
+    // - Decision-making blackbox
+    //
+    //
+    // Additional information:
+    // - For long-term memory you should use database that won't use RAM to avoid hauling megabytes of data.
+    //
+    //
 
 
     protected BrainletMemories longMemory = null;
     protected BrainletMemories shortMemory = null;
     protected Senses senses = null;
     protected Identity identity = null;
-    protected Mood mood = new PlutchikWheel();
+    protected Mood mood = null;
     protected BlackBox blackBox = null;
 
     public Brainlet() {
