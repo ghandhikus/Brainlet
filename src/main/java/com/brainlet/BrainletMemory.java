@@ -1,5 +1,6 @@
 package com.brainlet;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class BrainletMemory {
@@ -15,6 +16,7 @@ public class BrainletMemory {
 
     public BrainletMemory(String tag) {
         this.tag = tag;
+        this.data = new HashMap<>();
     }
 
 
@@ -22,6 +24,8 @@ public class BrainletMemory {
         this.tag = tag;
         this.data = data;
     }
+
+
 
     public String getTag() { return tag; }
     public void setTag(String tag) { this.previousTag = tag; this.tag = tag; this.dirty = true; }

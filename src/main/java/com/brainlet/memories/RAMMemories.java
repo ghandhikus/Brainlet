@@ -35,4 +35,13 @@ public class RAMMemories implements BrainletMemories {
 
         return CompletableFuture.completedFuture(new BrainletMemory(memory, value));
     }
+
+    @Override
+    public BrainletMemory getNowOrDefault(String memory, BrainletMemory def) {
+        Map<String, Object> value = memories.get(memory);
+        if(value == null)
+            return def;
+        else
+            return new BrainletMemory(memory, value);
+    }
 }
