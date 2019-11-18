@@ -25,8 +25,8 @@ public abstract class Brainlet {
     //
     //
     // Additional information:
-    // - For long-term memory you should use database that won't store data in memory
-    //   to avoid hauling megabytes of data.
+    // - For long-term memory you should use database that won't store json in memory
+    //   to avoid hauling megabytes of json.
     //
     //
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
